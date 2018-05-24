@@ -1,13 +1,16 @@
 package com.qibill.methods;
-import java.util.*;
 
-import com.qibill.pets.*;
+import java.util.List;
+import java.util.Map;
 
-import net.mindview.util.*;
+import com.qibill.pets.Person;
+import com.qibill.pets.Pet;
 
 public class ExplicitTypeSpecification {
-  static void f(Map<Person, List<Pet>> petPeople) {}
-  public static void main(String[] args) {
-    f(New.<Person, List<Pet>>map());
-  }
-} ///:~
+	static void f(Map<Person, List<Pet>> petPeople) {
+	}
+
+	public static void main(String[] args) {
+		f(New.<Person, List<Pet>>map());
+	}
+} /// :~
